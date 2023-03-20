@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
   type Link = {
     label: string;
     path: string;
@@ -28,11 +28,24 @@ export default function Navbar() {
   //   return classes.filter(Boolean).join(" ");
   // }
 
+  //*  Handles active link on navbar
   const [activeLink, setActiveLink] = useState("/");
 
   const handleSetActiveLink = (path: string) => {
     setActiveLink(path);
   };
+
+  //* Handles mobile menu
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    console.log(isOpen);
+  }, [isOpen]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full">
@@ -82,11 +95,13 @@ export default function Navbar() {
                         <XMarkIcon
                           className="block h-6 w-6"
                           aria-hidden="true"
+                          onClick={() => setIsOpen(!isOpen)}
                         />
                       ) : (
                         <Bars3Icon
                           className="block h-6 w-6"
                           aria-hidden="true"
+                          onClick={() => setIsOpen(!isOpen)}
                         />
                       )}
                     </Disclosure.Button>
@@ -95,20 +110,31 @@ export default function Navbar() {
               </div>
             </div>
             <div className="disclosure-panel__wrapper px-6">
-              <Disclosure.Panel className="bg-blue-500 sm:hidden">
-                <div className="space-y-1 px-3 pt-2 pb-3">
-                  {links.map(({ label, path }) => (
-                    <Disclosure.Button
-                      key={label}
-                      as={Link}
-                      href={`#${path}`}
-                      className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700"
-                    >
-                      {label}
-                    </Disclosure.Button>
-                  ))}
-                </div>
-              </Disclosure.Panel>
+              <Transition
+                show={open}
+                enter="transition ease-in-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="transition ease-in-out duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Disclosure.Panel className="min-h-screen sm:hidden">
+                  <div className="space-y-1 px-3 pt-2 pb-3">
+                    {links.map(({ label, path }) => (
+                      <Disclosure.Button
+                        key={label}
+                        as={Link}
+                        href={`#${path}`}
+                        onClick={() => setIsOpen(false)}
+                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700"
+                      >
+                        {label}
+                      </Disclosure.Button>
+                    ))}
+                  </div>
+                </Disclosure.Panel>
+              </Transition>
             </div>
           </>
         )}

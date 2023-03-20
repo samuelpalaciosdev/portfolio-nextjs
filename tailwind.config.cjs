@@ -1,6 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const headlessUi = require('@headlessui/tailwindcss');
-
 /** @type {import('tailwindcss').Config} */
 
 const config = {
@@ -8,7 +5,7 @@ const config = {
   theme: {
     extend: {},
   },
-  plugins: [headlessUi],
+  plugins: [],
 };
 
 module.exports = config;
