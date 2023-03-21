@@ -24,6 +24,12 @@ const Home: NextPage = () => {
         <h2 className="text-2xl font-semibold text-gray-400">
           a full-stack developer who loves to build things with code.
         </h2>
+        <p className="mt-6 text-base font-normal text-gray-400">
+          I&apos;m a software engineer student who loves to build things for the
+          web. As I&apos;ve grown as a developer, I&apos;ve the opportunity to
+          create products that not only provide value to users, but are also
+          enjoyable to use.
+        </p>
       </section>
 
       <section id="about">

@@ -77,8 +77,8 @@ export default function Navbar(): JSX.Element {
                           onClick={() => handleSetActiveLink(path)}
                           className={
                             activeLink === path
-                              ? "rounded-md px-3 py-2 text-base font-semibold text-white"
-                              : "rounded-md px-3 py-2 text-base font-semibold text-gray-400 hover:text-white"
+                              ? "rounded-md px-3 py-2 text-base font-semibold text-white  transition-colors duration-300 ease-in-out"
+                              : "rounded-md px-3 py-2 text-base font-semibold text-gray-400 transition-colors duration-300 ease-in-out hover:text-white hover:transition hover:duration-300 hover:ease-in-out"
                           }
                         >
                           {label}
@@ -93,13 +93,13 @@ export default function Navbar(): JSX.Element {
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon
-                          className="block h-6 w-6"
+                          className="block h-7 w-7"
                           aria-hidden="true"
                           onClick={() => setIsOpen(!isOpen)}
                         />
                       ) : (
                         <Bars3Icon
-                          className="block h-6 w-6"
+                          className="block h-7 w-7"
                           aria-hidden="true"
                           onClick={() => setIsOpen(!isOpen)}
                         />
