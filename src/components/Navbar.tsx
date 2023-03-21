@@ -61,7 +61,7 @@ export default function Navbar(): JSX.Element {
                       onClick={() => handleSetActiveLink("/")}
                       className="block text-2xl font-semibold tracking-tight text-white"
                     >
-                      samuelpalacios<span className="text-teal-300">dev</span>
+                      samuelpalacios<span className="text-cyan-400">dev</span>
                     </Link>
                   </div>
                 </div>
@@ -77,8 +77,8 @@ export default function Navbar(): JSX.Element {
                           onClick={() => handleSetActiveLink(path)}
                           className={
                             activeLink === path
-                              ? "rounded-md bg-gray-900 px-3 py-2 text-base font-semibold text-white"
-                              : "rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:text-white"
+                              ? "rounded-md px-3 py-2 text-base font-semibold text-white"
+                              : "rounded-md px-3 py-2 text-base font-semibold text-gray-400 hover:text-white"
                           }
                         >
                           {label}
@@ -113,21 +113,21 @@ export default function Navbar(): JSX.Element {
               <Transition
                 show={open}
                 enter="transition ease-in-out duration-300"
-                enterFrom="opacity-0 scale-95"
+                enterFrom="opacity-0 scale-90"
                 enterTo="opacity-100 scale-100"
-                leave="transition ease-in-out duration-200"
+                leave="transition ease-in-out duration-300"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
                 <Disclosure.Panel className="min-h-screen sm:hidden">
-                  <div className="space-y-1 px-3 pt-2 pb-3">
+                  <div className="space-y-1 pt-2 pb-3">
                     {links.map(({ label, path }) => (
                       <Disclosure.Button
                         key={label}
                         as={Link}
                         href={`#${path}`}
                         onClick={() => setIsOpen(false)}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700"
+                        className="block rounded-md py-2 text-base font-medium text-gray-300 hover:bg-gray-700"
                       >
                         {label}
                       </Disclosure.Button>

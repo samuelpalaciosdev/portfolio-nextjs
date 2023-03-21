@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           Hi, I&apos;m Samuel Palacios, a full-stack developer who loves to
           build things with code.
         </h1> */}
-        <span className="text-xl font-semibold tracking-tight text-teal-400">
+        <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
         </span>
         <h1 className="text-4xl font-semibold tracking-tight text-white">
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       </section>
 
       <section id="about">
-        <h1 className="text-3xl text-teal-500">About</h1>
+        <h1 className="text-3xl text-cyan-400">About</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         </p>
       </section>
       <section id="projects">
-        <h1 className="text-3xl text-teal-500">Projects</h1>
+        <h1 className="text-3xl text-cyan-400">Projects</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         </p>
       </section>
       <section id="contact">
-        <h1 className="text-3xl text-teal-500">Contact</h1>
+        <h1 className="text-3xl text-cyan-400">Contact</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
