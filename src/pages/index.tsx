@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -11,10 +12,6 @@ const Home: NextPage = () => {
       </Head>
 
       <section id="hero" className="mt-16 min-h-screen pt-24">
-        {/* <h1 className="text-4xl font-semibold tracking-tight text-white ">
-          Hi, I&apos;m Samuel Palacios, a full-stack developer who loves to
-          build things with code.
-        </h1> */}
         <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
         </span>
@@ -30,6 +27,14 @@ const Home: NextPage = () => {
           that not only provide value to users, but are also exceptional and
           user-friendly.
         </p>
+        <div className="btn-wrapper">
+          <Link
+            href="#projects"
+            className="hover:to-blue-7 mt-8 inline-block transform rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg"
+          >
+            See my projects
+          </Link>
+        </div>
       </section>
 
       <section id="about">
