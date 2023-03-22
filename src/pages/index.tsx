@@ -18,17 +18,17 @@ const Home: NextPage = () => {
         <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
         </span>
-        <h1 className="text-4xl font-semibold tracking-tight text-white">
+        <h1 className="mt-1 text-4xl font-semibold tracking-tight text-white">
           Samuel Palacios
         </h1>
         <h2 className="text-2xl font-semibold text-gray-400">
           a full-stack developer who loves to build things with code.
         </h2>
         <p className="mt-6 text-base font-normal text-gray-400">
-          I&apos;m a software engineer student who loves to build things for the
-          web. As I&apos;ve grown as a developer, I&apos;ve the opportunity to
-          create products that not only provide value to users, but are also
-          enjoyable to use.
+          I&apos;m a software engineering student who loves to build things for
+          the web. Through constant practice and learning, I create products
+          that not only provide value to users, but are also exceptional and
+          user-friendly.
         </p>
       </section>
 

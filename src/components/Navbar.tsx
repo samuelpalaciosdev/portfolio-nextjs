@@ -78,7 +78,7 @@ export default function Navbar(): JSX.Element {
                           className={
                             activeLink === path
                               ? "rounded-md px-3 py-2 text-base font-semibold text-white  transition-colors duration-300 ease-in-out"
-                              : "rounded-md px-3 py-2 text-base font-semibold text-gray-400 transition-colors duration-300 ease-in-out hover:text-white hover:transition hover:duration-300 hover:ease-in-out"
+                              : "rounded-md px-3 py-2 text-base font-semibold text-gray-400 transition-colors duration-200 ease-in-out hover:text-white hover:transition hover:duration-200 hover:ease-in-out"
                           }
                         >
                           {label}
