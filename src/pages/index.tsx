@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import styles from "../styles/index.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section id="hero" className="mt-20 min-h-screen pt-20">
+      <section
+        id="hero"
+        className={`mt-20 pt-20 ${styles.minHeight as string}`}
+      >
         <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
         </span>
@@ -38,8 +42,8 @@ const Home: NextPage = () => {
       </section>
 
       <section id="about">
-        <h1 className="text-3xl text-cyan-400">About</h1>
-        <p>
+        <h1 className="mb-4 text-2xl font-semibold text-white">About Me</h1>
+        <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
           doloremque minima ipsam quam vel itaque alias illum ea repudiandae
@@ -47,9 +51,9 @@ const Home: NextPage = () => {
           reiciendis.
         </p>
       </section>
-      <section id="projects">
-        <h1 className="text-3xl text-cyan-400">Projects</h1>
-        <p>
+      <section id="projects" className="mt-8">
+        <h1 className="mb-4 text-2xl font-semibold text-white">Projects</h1>
+        <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
           doloremque minima ipsam quam vel itaque alias illum ea repudiandae
@@ -57,9 +61,9 @@ const Home: NextPage = () => {
           reiciendis.
         </p>
       </section>
-      <section id="contact">
-        <h1 className="text-3xl text-cyan-400">Contact</h1>
-        <p>
+      <section id="contact" className="mt-8">
+        <h1 className="mb-4 text-2xl font-semibold text-white">Contact</h1>
+        <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
           eveniet excepturi, corporis odio quisquam facilis et error eaque porro
           doloremque minima ipsam quam vel itaque alias illum ea repudiandae
