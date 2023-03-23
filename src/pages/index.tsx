@@ -11,7 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section id="hero" className="mt-16 min-h-screen pt-24">
+      <section id="hero" className="mt-20 min-h-screen pt-20">
         <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
         </span>

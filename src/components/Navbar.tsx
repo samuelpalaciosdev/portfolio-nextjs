@@ -53,7 +53,7 @@ export default function Navbar(): JSX.Element {
         {({ open }) => (
           <>
             <div className="nav-container mx-auto max-w-7xl px-6 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center justify-between">
+              <div className="flex h-20 items-center justify-between">
                 <div className="flex items-center">
                   <div className="mr-4 flex-shrink-0">
                     <Link
