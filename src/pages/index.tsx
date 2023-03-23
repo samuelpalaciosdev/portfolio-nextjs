@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" className="pt-20">
         <h1 className="mb-4 text-2xl font-semibold text-white">About Me</h1>
         <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           reiciendis.
         </p>
       </section>
-      <section id="projects" className="mt-8">
+      <section id="projects" className="pt-20">
         <h1 className="mb-4 text-2xl font-semibold text-white">Projects</h1>
         <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           reiciendis.
         </p>
       </section>
-      <section id="contact" className="mt-8">
+      <section id="contact" className="pt-20">
         <h1 className="mb-4 text-2xl font-semibold text-white">Contact</h1>
         <p className="text-base font-normal text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A molestiae
