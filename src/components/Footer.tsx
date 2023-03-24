@@ -41,7 +41,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm leading-5 text-gray-500">
+          <p className="text-center text-sm leading-5 text-gray-400">
             &copy; 2023 Coded with{" "}
             <BsFillSuitHeartFill className="inline-block text-cyan-400" /> by{" "}
             <a
