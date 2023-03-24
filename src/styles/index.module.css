@@ -2,7 +2,11 @@
 /* .minHeight {
   min-height: calc(100svh - 10rem);
 } */
+/* .minHeight {
+  min-height: calc(100vh - 15rem);
+  min-height: calc(100svh - 15rem);
+} */
 .minHeight {
-  min-height: calc(100vh - 11rem);
-  min-height: calc(100svh - 11rem);
+  min-height: calc(100vh - 20rem);
+  min-height: calc(100svh - 20rem);
 }

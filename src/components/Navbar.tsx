@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // import Image from "next/image";
@@ -24,6 +24,7 @@ export default function Navbar(): JSX.Element {
       path: "contact",
     },
   ];
+
   // function classNames(...classes: string[]) {
   //   return classes.filter(Boolean).join(" ");
   // }

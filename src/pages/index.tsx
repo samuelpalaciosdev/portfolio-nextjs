@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import Footer from "~/components/Footer";
 import styles from "../styles/index.module.css";
 
 const Home: NextPage = () => {
@@ -31,6 +32,9 @@ const Home: NextPage = () => {
           that not only provide value to users, but are also exceptional and
           user-friendly.
         </p>
+        {/* <div className="social-media-links-wrapper">
+          <div className="flex flex-row justify-center justify-items-center"></div>
+        </div> */}
         <div className="btn-wrapper">
           <Link
             href="#projects"
@@ -71,6 +75,7 @@ const Home: NextPage = () => {
           reiciendis.
         </p>
       </section>
+      <Footer />
     </>
   );
 };
