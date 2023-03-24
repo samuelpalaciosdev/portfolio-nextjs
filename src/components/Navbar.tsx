@@ -56,13 +56,25 @@ export default function Navbar(): JSX.Element {
               <div className="flex h-20 items-center justify-between">
                 <div className="flex items-center">
                   <div className="mr-4 flex-shrink-0">
-                    <Link
+                    {/* <Link
                       href="/"
                       onClick={() => handleSetActiveLink("/")}
                       className="block text-2xl font-semibold tracking-tight text-white"
                     >
                       samuelpalacios<span className="text-cyan-400">dev</span>
-                    </Link>
+                    </Link> */}
+                    <Disclosure.Button
+                      as={Link}
+                      href="/"
+                      onClick={() => {
+                        handleSetActiveLink("/");
+                        setIsOpen(false);
+                      }}
+                      className="block text-2xl font-semibold tracking-tight text-white"
+                      disabled={!isOpen}
+                    >
+                      samuelpalacios<span className="text-cyan-400">dev</span>
+                    </Disclosure.Button>
                   </div>
                 </div>
 

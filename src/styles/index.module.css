@@ -1,3 +1,7 @@
+/* 100vsh - the padding top of the hero and the height of navbar */
+/* .minHeight {
+  min-height: calc(100svh - 10rem);
+} */
 .minHeight {
-  min-height: 90vh;
+  min-height: calc(100svh - 10.5rem);
 }
