@@ -3,5 +3,6 @@
   min-height: calc(100svh - 10rem);
 } */
 .minHeight {
-  min-height: calc(100svh - 10.5rem);
+  min-height: calc(100vh - 11rem);
+  min-height: calc(100svh - 11rem);
 }
