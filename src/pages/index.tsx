@@ -15,7 +15,9 @@ const Home: NextPage = () => {
 
       <section
         id="hero"
-        className={`mt-20 pt-20 ${styles.minHeight as string}`}
+        className={`flex min-h-screen flex-col items-start justify-center pt-20 ${
+          styles.height as string
+        }`}
       >
         <span className="text-xl font-semibold tracking-tight text-cyan-400">
           Hi, I&apos;m
