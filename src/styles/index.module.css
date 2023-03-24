@@ -1,17 +1,12 @@
-/* 100vsh - the padding top of the hero and the height of navbar */
-/* .minHeight {
-  min-height: calc(100svh - 10rem);
-} */
-/* .minHeight {
-  min-height: calc(100vh - 15rem);
-  min-height: calc(100svh - 15rem);
-} */
+/* Height based on 100vh and removing the height of navbar */
 .minHeight {
-  min-height: calc(100vh - 20rem);
-  min-height: calc(100svh - 20rem);
-}
-
-.height {
   min-height: calc(100vh - 5rem);
   min-height: calc(100svh - 5rem);
 }
+
+/* @media screen and (min-width: 640px) {
+  .minHeight {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+} */
