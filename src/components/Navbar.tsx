@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-// import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar(): JSX.Element {
@@ -25,10 +24,6 @@ export default function Navbar(): JSX.Element {
     },
   ];
 
-  // function classNames(...classes: string[]) {
-  //   return classes.filter(Boolean).join(" ");
-  // }
-
   //*  Handles active link on navbar
   const [activeLink, setActiveLink] = useState("/");
 
@@ -45,7 +40,7 @@ export default function Navbar(): JSX.Element {
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-    console.log(isOpen);
+    // console.log(isOpen);
   }, [isOpen]);
 
   return (
@@ -57,13 +52,6 @@ export default function Navbar(): JSX.Element {
               <div className="flex h-20 items-center justify-between">
                 <div className="flex items-center">
                   <div className="mr-4 flex-shrink-0">
-                    {/* <Link
-                      href="/"
-                      onClick={() => handleSetActiveLink("/")}
-                      className="block text-2xl font-semibold tracking-tight text-white"
-                    >
-                      samuelpalacios<span className="text-cyan-400">dev</span>
-                    </Link> */}
                     <Disclosure.Button
                       as={Link}
                       href="/"
@@ -86,7 +74,6 @@ export default function Navbar(): JSX.Element {
                         <Link
                           key={label}
                           href={`#${path}`}
-                          // prefetch={false}
                           onClick={() => handleSetActiveLink(path)}
                           className={
                             activeLink === path

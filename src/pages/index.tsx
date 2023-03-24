@@ -15,9 +15,6 @@ const Home: NextPage = () => {
 
       <section
         id="hero"
-        // className={`flex min-h-screen flex-col items-start justify-center pt-20 ${
-        //   styles.minHeight as string
-        // } sm:${styles.height as string}`}
         // * Height class with media queries
         className={`flex min-h-screen flex-col items-start justify-center pt-20 ${
           styles.minHeight as string
@@ -38,9 +35,7 @@ const Home: NextPage = () => {
           that not only provide value to users, but are also exceptional and
           user-friendly.
         </p>
-        {/* <div className="social-media-links-wrapper">
-          <div className="flex flex-row justify-center justify-items-center"></div>
-        </div> */}
+
         <div className="btn-wrapper">
           <Link
             href="#projects"
@@ -50,7 +45,6 @@ const Home: NextPage = () => {
           </Link>
         </div>
       </section>
-      {/* //! Not using media query here, testing */}
       <section id="about" className="pt-20">
         <h1 className="mb-4 text-2xl font-semibold text-white">About Me</h1>
         <p className="text-base font-normal text-gray-400">
