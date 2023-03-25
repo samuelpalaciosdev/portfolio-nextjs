@@ -34,13 +34,21 @@ export default function Navbar(): JSX.Element {
   //* Handles mobile menu
   const [isOpen, setIsOpen] = useState(false);
 
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.classList.add("overflow-hidden");
+  //   } else {
+  //     document.body.classList.remove("overflow-hidden");
+  //   }
+  //   // console.log(isOpen);
+  // }, [isOpen]);
+
   useEffect(() => {
     if (isOpen) {
-      document.body.classList.add("overflow-hidden");
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.style.overflow = "";
     }
-    // console.log(isOpen);
   }, [isOpen]);
 
   return (

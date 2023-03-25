@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Navbar />
           </header>
           <main className="px-6 sm:px-6 lg:px-8">{children}</main>
+          <Footer />
         </div>
       </div>
     </>
