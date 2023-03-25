@@ -31,18 +31,10 @@ export default function Navbar(): JSX.Element {
     setActiveLink(path);
   };
 
-  //* Handles mobile menu
+  //* Handles mobile menu state
   const [isOpen, setIsOpen] = useState(false);
 
-  // useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.classList.add("overflow-hidden");
-  //   } else {
-  //     document.body.classList.remove("overflow-hidden");
-  //   }
-  //   // console.log(isOpen);
-  // }, [isOpen]);
-
+  //* Add overflow hidden to body when mobile menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
